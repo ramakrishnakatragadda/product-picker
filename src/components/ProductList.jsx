@@ -34,9 +34,9 @@ const ProductList = ({ products, setProducts }) => {
   };
 
   return (
-    <div>
+    <>
       <SortableContext items={products} strategy={verticalListSortingStrategy}>
-        <div className="productList">
+        <div>
           {products.map(({ id, title, variants }, index) => (
             <Product
               key={id}
@@ -70,7 +70,7 @@ const ProductList = ({ products, setProducts }) => {
           currentProductId={currentProductId}
         />
       )}
-    </div>
+    </>
   );
 };
 

@@ -4,8 +4,9 @@
   align-items: center;
   justify-content: center;
 }
+
 .product {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .flexWrapper {
@@ -22,9 +23,12 @@
 }
 
 .productPickerInput {
-  width: 275px;
+  width: 100%;
+  max-width: 275px;
   outline: none;
   border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .pencilIcon {
@@ -40,7 +44,8 @@
 }
 
 .btn {
-  width: 125px;
+  width: 100%;
+  max-width: 125px;
   height: 40px;
   background-color: green;
   color: #fff;
@@ -59,7 +64,8 @@
   background-color: transparent;
   border-bottom: 1px solid;
   margin-top: 10px;
-  margin-left: 450px;
+  margin-left: auto;
+  float: right;
 }
 
 .deleteProduct {
@@ -71,8 +77,10 @@
 .addProduct {
   margin-top: 30px;
   padding: 10px 20px;
-  width: 150px;
-  margin-left: 350px;
+  width: 100%;
+  max-width: 150px;
+  margin-right: 10px;
+  float: right;
   color: '#fff';
   background-color: transparent;
 }
@@ -86,8 +94,8 @@
 .listItem {
   list-style: none;
   margin-left: 50px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: auto;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -119,10 +127,11 @@
 
 .productPicker {
   height: 750px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   position: fixed;
   margin-top: 100px;
-  right: 8%;
+  right: 0;
   top: 0;
 }
 
@@ -174,7 +183,8 @@
   border-bottom: 1px solid;
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .image {
@@ -184,14 +194,15 @@
 .variantListItem {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 15px;
   border-bottom: 1px solid;
-  padding: 10px 0 10px 50px;
+  padding: 10px 0 10px 10px;
 }
 
 .modalFooter {
-  height: 70px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 10px;
 }
