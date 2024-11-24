@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  margin-top: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.product {
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.flexWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputWithIcon {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+}
+
+.productPickerInput {
+  width: 275px;
+  outline: none;
+  border: none;
+}
+
+.pencilIcon {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-right: 10px;
+}
+
+.field {
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.btn {
+  width: 125px;
+  height: 40px;
+  background-color: green;
+  color: #fff;
+}
+
+.discount {
+  width: 50px;
+}
+
+.dicountType {
+  width: 100px;
+}
+
+.showVariants {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  margin-left: 450px;
+}
+
+.deleteProduct {
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+.addProduct {
+  margin-top: 30px;
+  padding: 10px 20px;
+  width: 150px;
+  margin-left: 350px;
+  color: '#fff';
+  background-color: transparent;
+}
+
+.variant {
+  padding: 8px;
+  border-radius: 15px;
+  outline: none;
+}
+
+.listItem {
+  list-style: none;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dragHandle {
+  background: transparent;
+  border: none;
+  padding: 5px;
+  cursor: grab;
+}
+
+.dragHandle:active {
+  cursor: grabbing;
+}
+
+.dotGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 5px);
+  grid-gap: 4px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.productPicker {
+  height: 750px;
+  width: 500px;
+  position: fixed;
+  margin-top: 100px;
+  right: 8%;
+  top: 0;
+}
+
+.modal {
+  background: white;
+  margin: auto;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modalTitle {
+  margin-left: 10px;
+}
+
+.searchBar {
+  width: 95%;
+  padding: 10px;
+}
+
+.close {
+  border: 1px solid;
+  border-radius: 3px;
+  background-color: gray;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.modalContent {
+  overflow: scroll;
+  height: 500px;
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+.productListItem {
+  padding: 20px;
+  list-style: none;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.image {
+  background-color: gray;
+}
+
+.variantListItem {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid;
+  padding: 10px 0 10px 50px;
+}
+
+.modalFooter {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
